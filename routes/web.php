@@ -17,5 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tweets', 'App\Http\Controllers\UserController@users');
+Route::get('/users', 'App\Http\Controllers\UserController@users');
+
+Route::get('/friends', 'App\Http\Controllers\FriendController@friends');
 
